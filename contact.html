@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Next Level Gaming & Esports Arena</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #080812;
+            color: white;
+        }
+
+        header {
+            background: #0d0d1f;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #6a00ff;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .logo span {
+            color: #7b00ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00bfff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 70px 20px 40px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #ffffff;
+            text-shadow: 0 0 15px #6a00ff;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #bbbbcc;
+            font-size: 18px;
+        }
+
+        .contact-container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 30px auto 70px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .contact-info,
+        .contact-form {
+            background: #111125;
+            padding: 35px;
+            border-radius: 15px;
+            border: 1px solid #292950;
+            box-shadow: 0 0 20px rgba(106, 0, 255, 0.2);
+        }
+
+        .contact-info h2,
+        .contact-form h2 {
+            color: #8c2cff;
+            margin-bottom: 25px;
+        }
+
+        .contact-info p {
+            color: #ccccdd;
+            line-height: 1.8;
+            margin-bottom: 18px;
+        }
+
+        .contact-item {
+            margin-bottom: 22px;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #00bfff;
+            margin-bottom: 5px;
+        }
+
+        .contact-item span {
+            color: #dddddd;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 7px;
+            color: #dddddd;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 20px;
+            background: #080812;
+            border: 1px solid #3b3b60;
+            border-radius: 8px;
+            color: white;
+            outline: none;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #7b00ff;
+            box-shadow: 0 0 8px rgba(123, 0, 255, 0.5);
+        }
+
+        textarea {
+            height: 130px;
+            resize: vertical;
+        }
+
+        button {
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(90deg, #6a00ff, #00bfff);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 15px #6a00ff;
+        }
+
+        footer {
+            background: #0d0d1f;
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid #292950;
+            color: #9999aa;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            NEXT LEVEL <span>GAMING</span>
+        </div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="packages.html">Packages</a>
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Contact Us</h1>
+        <p>Have questions? Get in touch with Next Level Gaming & Esports Arena.</p>
+    </section>
+
+    <section class="contact-container">
+
+        <div class="contact-info">
+            <h2>Get In Touch</h2>
+
+            <p>
+                Whether you have a question about our gaming packages,
+                bookings, events or services, our team is ready to help.
+            </p>
+
+            <div class="contact-item">
+                <strong> Location</strong>
+                <span>Next Level Gaming & Esports Arena</span>
+            </div>
+
+            <div class="contact-item">
+                <strong>📞 Phone</strong>
+                <span>+27 00 000 0000</span>
+            </div>
+
+            <div class="contact-item">
+                <strong>✉ Email</strong>
+                <span>info@nextlevelgaming.co.za</span>
+            </div>
+
+            <div class="contact-item">
+                <strong> Gaming & Esports</strong>
+                <span>Gaming sessions, tournaments and esports events</span>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+                <label for="phone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                >
+
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message here..."
+                    required
+                ></textarea>
+
+                <button type="submit">SEND MESSAGE</button>
+
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Next Level Gaming & Esports Arena. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
